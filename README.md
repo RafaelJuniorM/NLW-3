@@ -26,4 +26,6 @@
 
 * Dia 2 :
     clamp;
-    
+    JS:
+      acessando propriedades de um objetos, basta colocar um ponto e o nome da propriedade (.color);
+      leaflet - biblioteca de js para mapas responsivos
