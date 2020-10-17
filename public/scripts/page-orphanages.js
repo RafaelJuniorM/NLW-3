@@ -12,7 +12,7 @@ const icon = L.icon({
   iconUrl: "./public/images/map-marker.svg", // localizaçao do icone
   iconSize: [58, 68], // tamanho 
   iconAnchor: [28, 68], // onde ele estara ancorado
-  popupAnchor: [88, 0] 
+  popupAnchor: [170, 2] 
 })
 
 // create popup overlay 
@@ -21,11 +21,11 @@ const popup = L.popup({
   ClassName: 'map-popup',
   minWidth: 240,
   minHeight: 240
-}).setContent('Lar das meninas <a href="orphanage.html?id=1" class="choose-orphanage"> <img src="./public/images/arrow-white.svg> </a>')
+}).setContent('Lar das meninas <a href="orphanage.html?id=1" class="choose-orphanage"> <img src="./public/images/arrow-white.svg"> </a>') 
+// cria-se o botao dentro do popup
  
-
 // create and add marker
 L
 .marker([-19.9240083,-43.9410837], {icon})
 .addTo(map)
-.bindPopup('popup');
+.bindPopup(popup);
