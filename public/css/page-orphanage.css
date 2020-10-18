@@ -37,3 +37,109 @@ aside.sidebar footer button:hover {
 .with-sidebar {
   padding-left: 110px;
 }
+
+/* orphanage-details */
+.orphanage-details {
+  width: 70rem /*700px*/;
+  margin: 6.4rem auto;
+  background: white;
+  border: 1px solid #D3e2e5;
+  border-radius: 2rem;
+
+  overflow: hidden; /*pelo fato da imagem esta transbordando a caixa */
+}
+
+.orphanage-details > img { /* > pega a imagem que esta no primeiro nivel */
+  width: 100%;
+  height: 30rem;
+  object-fit: cover; /* Adptaçao da imagem */
+}
+
+.images {
+  display: grid; /* meche com todos os filhos que esto dentro da "caixa"*/
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1.6rem;
+  margin: 16px 40px 0;
+}
+
+.images button {
+  border: 0;
+  background: none;
+
+  height: 8.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+
+  overflow: hidden; /* Limita a caixa do button, para que o conteudo respeita as modificações */
+
+  opacity: .6;
+
+  transition: opacity .2s;
+}
+
+.images button:hover,
+.images button.active {
+  opacity: 1;
+}
+
+.images button img {
+
+  width: 100%;
+  height: 8.8rem;
+  object-fit: cover;
+}
+
+/* orphange-details-content*/
+.orphanage-details-content {
+  padding: 8rem;
+}
+
+.orphanage-details-content h1 {
+  color: #4d6f80;
+  font-size: 5.4rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.orphanage-details-content p {
+  color: #5c8599;
+  line-height: 1.6;
+  margin-top: 2.4rem;
+}
+
+/* MAP*/
+.map-container {
+  margin-top: 6.4rem;
+  background: #e6f7fb;
+  border: 1px solid #b3dae2;
+  border-radius: 2rem;
+}
+
+#mapid {
+  width: 100%;
+  height: 28rem;
+}
+
+.map-container footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.map-container footer a {
+  color: #0089a5;
+  text-decoration: none;
+}
+
+.map-container .leaflet-container {
+  border-bottom: 1px solid #dde3f0;
+  border-radius: 2rem;
+}
+
+.orphanage-details-content hr {
+  width: 100%;
+  height: 1px;
+
+  border: 0;
+  background: #d3e2e6;
+  margin: 6.4rem 0;
+}
